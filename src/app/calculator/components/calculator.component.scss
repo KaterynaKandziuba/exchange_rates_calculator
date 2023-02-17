@@ -1,0 +1,25 @@
+.calculator-wrapper {
+  padding: 20px;
+  width: 100%;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+fieldset {
+  border: none;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  label {
+    width: 50px;
+  }
+
+  input {
+    padding: 5px;
+    margin: 10px;
+  }
+}

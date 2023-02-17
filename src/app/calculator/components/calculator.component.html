@@ -1,0 +1,23 @@
+<div class="calculator-wrapper">
+  <h2>Calculator</h2>
+  <form [formGroup]="form">
+    <fieldset class="from">
+      <label for="from-amount">FROM:</label>
+      <input id="from-amount" formControlName="fromInput" (input)="onAmountChange($event)" placeholder="0">
+      <select id="currency" formControlName="fromCurrency" (change)="onAmountChange($event)">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH" selected>UAH</option>
+      </select>
+    </fieldset>
+    <fieldset class="to">
+      <label for="to-amount">TO:</label>
+      <input id="to-amount" formControlName="toInput" (input)="onAmountChange($event, true)" placeholder="0">
+      <select id="currency" formControlName="toCurrency" (change)="onAmountChange($event)">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+      </select>
+    </fieldset>
+  </form>
+</div>
